@@ -1,3 +1,4 @@
+// PathMark: ./tests/src/rules/validate-pathmark-path.js
 /* eslint-disable @eslint-community/eslint-comments/disable-enable-pair */
 /* eslint-disable sonarjs/no-duplicate-string */
 /* eslint-disable import/no-named-as-default-member */
@@ -76,3 +77,4 @@ ruleTester.run("validate-pathmark-path", rule, {
     },
   ],
 });
+// EOF

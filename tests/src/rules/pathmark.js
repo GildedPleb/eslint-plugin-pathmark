@@ -1,3 +1,4 @@
+// PathMark: ./tests/src/rules/pathmark.js
 /* eslint-disable @eslint-community/eslint-comments/disable-enable-pair */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
@@ -87,3 +88,4 @@ ruleTester.run("path-mark-rule", rule, {
     },
   ],
 });
+// EOF

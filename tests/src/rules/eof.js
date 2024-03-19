@@ -1,3 +1,4 @@
+// PathMark: ./tests/src/rules/eof.js
 /* eslint-disable @eslint-community/eslint-comments/disable-enable-pair */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
@@ -84,3 +85,4 @@ ruleTester.run("validate-eof-tag", rule, {
     },
   ],
 });
+// EOF

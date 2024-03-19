@@ -1,3 +1,4 @@
+// PathMark: ./src/rules/eof.ts
 import { TSESLint } from "@typescript-eslint/utils";
 
 import { eof } from "../helpers.js";
@@ -89,3 +90,4 @@ const rule: TSESLint.RuleModule<
 };
 
 export default rule;
+// EOF

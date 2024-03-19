@@ -1,3 +1,4 @@
+// PathMark: ./src/rules/validate-pathmark-path.ts
 import path from "node:path";
 
 import { TSESLint } from "@typescript-eslint/utils";
@@ -92,3 +93,4 @@ const rule: TSESLint.RuleModule<"incorrectPath", [{ tag?: string }?]> = {
 };
 
 export default rule;
+// EOF
