@@ -50,5 +50,12 @@
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
   },
   "license": "MIT",
-  "prettier": {}
+  "prettier": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GildedPleb/eslint-plugin-pathmark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GildedPleb/eslint-plugin-pathmark/issues"
+  }
 }
