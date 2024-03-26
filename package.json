@@ -12,7 +12,7 @@
     "flat",
     "flatconfig",
     "AI",
-    "Aritificial ind=teligence"
+    "Artificial intelligence"
   ],
   "author": "GildedPleb (https://twitter.com/@gildedpleb)",
   "contributors": [
@@ -21,7 +21,7 @@
       "url": "https://twitter.com/@gildedpleb"
     }
   ],
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "exports": "./dist/index.js",
   "scripts": {
     "lint": "npm-run-all \"lint:*\"",
@@ -57,5 +57,8 @@
   },
   "bugs": {
     "url": "https://github.com/GildedPleb/eslint-plugin-pathmark/issues"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
