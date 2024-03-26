@@ -1,8 +1,9 @@
 import { eof } from "../helpers.js";
 const rule = {
     create(context) {
+        var _a;
         const { sourceCode } = context;
-        const configuration = context.options[0] || {};
+        const configuration = (_a = context.options[0]) !== null && _a !== void 0 ? _a : {};
         const tag = configuration.tag !== undefined && configuration.tag !== ""
             ? configuration.tag
             : eof;
@@ -76,3 +77,4 @@ const rule = {
     },
 };
 export default rule;
+// EOF

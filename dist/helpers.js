@@ -1,3 +1,4 @@
+// PathMark: ./src/helpers.ts
 import fs from "node:fs";
 import path from "node:path";
 /**
@@ -17,3 +18,4 @@ export function findProjectRoot(startDirectory) {
 }
 export const mark = "PathMark:";
 export const eof = "EOF";
+// EOF

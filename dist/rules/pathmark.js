@@ -1,14 +1,16 @@
+// PathMark: ./src/rules/pathmark.ts
 import path from "node:path";
 import { findProjectRoot, mark } from "../helpers.js";
 const rule = {
     create(context) {
+        var _a;
         const filePath = context.filename;
         const relativePath = path.relative(findProjectRoot(filePath), filePath);
         const { sourceCode } = context;
         const allComments = sourceCode.getAllComments();
         const shebangMatch = /^#![^\n]*\n/.exec(sourceCode.text);
         const shebang = shebangMatch ? shebangMatch[0] : "";
-        const configuration = context.options[0] || {};
+        const configuration = (_a = context.options[0]) !== null && _a !== void 0 ? _a : {};
         const tag = configuration.tag !== undefined && configuration.tag !== ""
             ? configuration.tag
             : mark;
@@ -52,3 +54,4 @@ const rule = {
     },
 };
 export default rule;
+// EOF

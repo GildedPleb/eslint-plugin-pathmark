@@ -1,3 +1,4 @@
+// PathMark: ./src/index.ts
 import checkEofTag from "./rules/eof.js";
 import pathMarkRule from "./rules/pathmark.js";
 import checkPathmarkPath from "./rules/validate-pathmark-path.js";
@@ -42,3 +43,4 @@ const plugin = {
     rules: pluginDefs,
 };
 export default plugin;
+// EOF

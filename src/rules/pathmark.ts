@@ -1,7 +1,7 @@
 // PathMark: ./src/rules/pathmark.ts
 import path from "node:path";
 
-import { TSESLint } from "@typescript-eslint/utils";
+import { type TSESLint } from "@typescript-eslint/utils";
 
 import { findProjectRoot, mark } from "../helpers.js";
 
@@ -13,8 +13,8 @@ const rule: TSESLint.RuleModule<"includePath", [{ tag?: string }?]> = {
     const allComments = sourceCode.getAllComments();
     const shebangMatch = /^#![^\n]*\n/.exec(sourceCode.text);
     const shebang = shebangMatch ? shebangMatch[0] : "";
+    const configuration = context.options[0] ?? {};
 
-    const configuration = context.options[0] || {};
     const tag =
       configuration.tag !== undefined && configuration.tag !== ""
         ? configuration.tag

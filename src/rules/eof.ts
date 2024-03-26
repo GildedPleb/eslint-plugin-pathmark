@@ -1,5 +1,5 @@
 // PathMark: ./src/rules/eof.ts
-import { TSESLint } from "@typescript-eslint/utils";
+import { type TSESLint } from "@typescript-eslint/utils";
 
 import { eof } from "../helpers.js";
 
@@ -9,7 +9,7 @@ const rule: TSESLint.RuleModule<
 > = {
   create(context) {
     const { sourceCode } = context;
-    const configuration = context.options[0] || {};
+    const configuration = context.options[0] ?? {};
     const tag =
       configuration.tag !== undefined && configuration.tag !== ""
         ? configuration.tag

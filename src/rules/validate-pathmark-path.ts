@@ -1,7 +1,7 @@
 // PathMark: ./src/rules/validate-pathmark-path.ts
 import path from "node:path";
 
-import { TSESLint } from "@typescript-eslint/utils";
+import { type TSESLint } from "@typescript-eslint/utils";
 
 import { findProjectRoot, mark } from "../helpers.js";
 
@@ -13,7 +13,7 @@ const rule: TSESLint.RuleModule<"incorrectPath", [{ tag?: string }?]> = {
     const filename = `./${relativePath}`;
     const allComments = sourceCode.getAllComments();
 
-    const configuration = context.options[0] || {};
+    const configuration = context.options[0] ?? {};
     const tag =
       configuration.tag !== undefined && configuration.tag !== ""
         ? configuration.tag
