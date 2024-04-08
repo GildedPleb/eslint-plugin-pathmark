@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
-    "eslint-config-current-thing": "^4.3.1",
+    "eslint-config-current-thing": "^6.0.1",
     "eslint-doc-generator": "^1.0.0",
     "eslint-plugin-eslint-plugin": "^5.4.1",
     "eslint-plugin-node": "^11.1.0",

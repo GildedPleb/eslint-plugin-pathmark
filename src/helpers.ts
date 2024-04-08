@@ -5,8 +5,9 @@ import path from "node:path";
 /**
  *
  * @param startDirectory - The full filepath from /
+ * @returns the project root
  */
-export function findProjectRoot(startDirectory: string) {
+export function findProjectRoot(startDirectory: string): string {
   let currentDirectory = startDirectory;
   // eslint-disable-next-line security/detect-non-literal-fs-filename
   while (!fs.existsSync(path.join(currentDirectory, "package.json"))) {

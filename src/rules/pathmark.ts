@@ -12,7 +12,7 @@ const rule: TSESLint.RuleModule<"includePath", [{ tag?: string }?]> = {
     const { sourceCode } = context;
     const allComments = sourceCode.getAllComments();
     const shebangMatch = /^#![^\n]*\n/.exec(sourceCode.text);
-    const shebang = shebangMatch ? shebangMatch[0] : "";
+    const shebang = shebangMatch === null ? "" : shebangMatch[0];
     const configuration = context.options[0] ?? {};
 
     const tag =
